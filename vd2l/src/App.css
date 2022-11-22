@@ -1,0 +1,70 @@
+.navbar {
+  color: white;
+}
+
+.landing-page {
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.top-blue-header {
+  height: 5px;
+  width: 100%;
+  background-color: #3A7BBC;
+}
+
+.vd2l-text-logo {
+  font-family: 'inter';
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.nav-items {
+  padding-left: 28px;
+  padding-top: 28px;
+  padding-right: 28px;
+  padding-bottom: 23px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  background: rgba(217, 217, 217, 0.17);
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #151428;
+}
+
+.signup-dates {
+  display: flex;
+}
+
+.dottore-mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.dottore-desktop {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.card {
+  width: 290px;
+  margin: 0 auto;
+  background: rgba(164, 171, 182, 0.04);
+  height: 420px;
+  border-radius: 16.851px;
+}
+
+.red {
+  color: #FF3767;
+}
