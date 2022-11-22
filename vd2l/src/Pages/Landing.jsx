@@ -11,7 +11,8 @@ export default function Landing() {
 		<div className="landing-page">
 			<Navbar />
 			<div className="content-container">
-				<motion.div className="card" whileHover={{ scale: 1.1 }}>
+
+				<motion.div className="card" initial={{ x: -1000 }} animate={{ x:0 }} transition={{ duration: .5, type: "spring", bounce: .3}}> 
 					<div className="card-container">
 						<div className="card-header">
 							<div className="card-header-text">
@@ -32,16 +33,16 @@ export default function Landing() {
 								Signups are currently{" "}
 								<span className="red">OPEN</span>
 							</h1>
-							<motion.div className="signup-button" animate={{backgroundColor: "#AC7767"}}>
+							<motion.div className="signup-button" whileHover={{ scale: 1.1 }}>
 								<div className="signup-button-content">
 									<p className="signup-button-text">
 										Sign Up
 									</p>
-									<img
-										src={Signup}
-										alt="Signup Logo"
-										className="signup-logo"
-									/>
+										<img
+											src={Signup}
+											alt="Signup Logo"
+											className="signup-logo"
+										/>
 								</div>
 							</motion.div>
 							<div className="signup-dates">

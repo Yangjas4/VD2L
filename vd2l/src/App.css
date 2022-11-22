@@ -61,7 +61,7 @@
     margin-top: 20px;
     margin-bottom: 35px;
   }
-  
+
   .signup-button {
     display: flex;
     align-items: center;
@@ -106,6 +106,54 @@
     font-weight: 400;
     font-size: 14.5px;
   }
+
+  .dottore-desktop {
+    display: none;
+  }
+
+  .about-container {
+    margin-left: 40px;
+  }
+
+  .about-container > p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 45px;
+    margin-bottom: 25px;
+    width: 60px;
+  }
+
+  .about-paragraph-one {
+    width: 310px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+
+  .about-paragraph-two {
+    width: 285px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .about-paragraph-three {
+    width: 315px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .about-paragraph-four {
+    width: 330px;
+  }
+
+  .gaming {
+    width: 150px;
+    position: absolute;
+    top: 110px;
+    left: 200px;
+  }
 }
 
 
@@ -148,6 +196,7 @@
   }
 
 
+
   /* -------------------------
   ------- Card Styles -------- 
   ------------------------- */
@@ -160,7 +209,7 @@
     width: 500px;
     margin-top: 40px;
     position: absolute;
-    left: 1000px;
+    left: 900px;
     background: rgba(164, 171, 182, 0.04);
     height: 720px;
     border-radius: 16.851px;
@@ -220,7 +269,7 @@
   
   .signup-button-content {
     display: flex;
-    font-weight: 400;
+    font-weight: 600;
     color: white;
     gap: 7px;
     justify-content: center;
@@ -254,7 +303,58 @@
     font-weight: 400;
     font-size: 25px;
   }
+
+  .nav-item:hover {
+    font-weight: 700;
+  }
+
+  .nav-item > a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* -------------------------
+  ------- About Page -------- 
+  ------------------------- */
+
+  .about-container {
+    margin-top: 190px;
+    margin-left: 150px;
+  }
+
+  .about-title {
+    font-size: 50px;
+    width: 335px;
+    margin-bottom: 30px;
+  }
+
+  .about-paragraph-one {
+    width: 420px;
+    margin-bottom: 20px;
+  }
+
+  .about-paragraph-two {
+    width: 855px;
+    margin-bottom: 20px;
+  }
+
+  .about-paragraph-three {
+    width: 840px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .about-paragraph-four {
+    font-weight: 700;
+  }
+
+  .gaming {
+    position: absolute;
+    top: 150px;
+    left: 720px;
+  }
 }
+
 
 
 
@@ -273,7 +373,9 @@
   background-color: #3A7BBC;
 }
 
-.vd2l-text-logo {
+.vd2l-text-logo > a{
+  color: white;
+  text-decoration: none;
   font-family: 'inter';
   font-weight: 900;
   font-size: 36px;
@@ -332,6 +434,10 @@ footer {
   color: #151428;
 }
 
+.nav-item > a {
+  text-decoration: none;
+  color: white;
+}
 
 .dottore-mobile {
   position: fixed;
@@ -342,4 +448,19 @@ footer {
 
 .red {
   color: #FF3767;
+}
+
+.about-title {
+  color: #85DDFA;
+  font-weight: 600;
+}
+
+.about-container > p {
+  color: white;
+}
+
+.discord {
+  text-decoration: underline;
+  color: #4159D9;
+  cursor: pointer;
 }
