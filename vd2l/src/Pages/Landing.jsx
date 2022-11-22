@@ -1,16 +1,17 @@
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import Valorant from "../assets/valorant.svg";
+import Valorant from "../assets/valorant.png";
 import Signup from "../assets/Signup.svg";
 import DottoreDesktop from "../assets/DottoreDesktop.svg";
 import DottoreMobile from "../assets/DottoreMobile.svg";
+import { motion } from "framer-motion";
 
 export default function Landing() {
 	return (
 		<div className="landing-page">
 			<Navbar />
 			<div className="content-container">
-				<div className="card">
+				<motion.div className="card" whileHover={{ scale: 1.1 }}>
 					<div className="card-container">
 						<div className="card-header">
 							<div className="card-header-text">
@@ -31,7 +32,7 @@ export default function Landing() {
 								Signups are currently{" "}
 								<span className="red">OPEN</span>
 							</h1>
-							<div className="signup-button">
+							<motion.div className="signup-button" animate={{backgroundColor: "#AC7767"}}>
 								<div className="signup-button-content">
 									<p className="signup-button-text">
 										Sign Up
@@ -42,7 +43,7 @@ export default function Landing() {
 										className="signup-logo"
 									/>
 								</div>
-							</div>
+							</motion.div>
 							<div className="signup-dates">
 								<div className="start-date">
 									<div className="date-title">Start Date</div>
@@ -55,7 +56,7 @@ export default function Landing() {
 							</div>
 						</div>
 					</div>
-				</div>
+				</motion.div>
 
 				<img
 					src={DottoreMobile}
